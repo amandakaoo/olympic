@@ -2,7 +2,7 @@
 
 ###### Author: Amanda Kao
 
-<img src="images/tokyo2020.jpg" width=400 >
+<img src="images/tokyo2020.jpg" width=450 >
 
 ## Introduction
 
@@ -71,7 +71,7 @@ I found the name of the stadiums from the official website of the Olympic Games.
 
 ##### Tokyo 2020 Olympic Games Postponed
 
-To relate to the recent news, it will be interesting to mention the postponement of the 2020 Tokyo Olympic Games. Maybe some of the people already knew some information from the internet or TV news. I will talk deeply within this topic from different perspectives that I collected from various media.
+To relate to the recent news, it will be interesting to mention the postponement of the 2020 Tokyo Olympic Games. Maybe some of the people already knew some information from the internet or TV news. I will talk deeply within this topic from different perspectives that I collected from various media. 
 
 
 ## Data Sources
