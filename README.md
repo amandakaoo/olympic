@@ -90,9 +90,9 @@ To relate to the recent news, it will be interesting to mention the postponement
 <img src="images/estimated.png" width=450 >
 
 ## Data Sources
-- Most of my data and sources are from https://www.olympic.org/olympic-games, the official website of the Olympic Games.
-- https://www.britannica.com/sports/Olympic-Games
-- https://www.britannica.com/sports/Olympic-Games/History-of-the-modern-Summer-Games
-- BBC news
-- The Asahi Shimbun http://www.asahi.com
+- Most of my data and sources are from [the official website of the Olympic Games](https://www.olympic.org/olympic-games)
+- [Olympic History](https://www.britannica.com/sports/Olympic-Games)
+- YouTube [Video 1](https://www.youtube.com/watch?v=ENMhrEVa4XQ) [Video 2](https://www.youtube.com/watch?v=VdHHus8IgYA)
+- BBC news 
+- [The Asahi Shimbun](http://www.asahi.com)
 
