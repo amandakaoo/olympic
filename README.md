@@ -2,7 +2,7 @@
 
 ###### Author: Amanda Kao
 
-<img src="images/tokyo2020.jpg" width=450 >
+<img src="images/tokyo2020.jpg" width=400 >
 
 ## Introduction
 
@@ -25,6 +25,8 @@ Despite telling the history of the Summer Olympic Games, I also want to analyze 
 #### Applied libraries & Web Services
 - Leaflet
 - Github
+
+<img src="images/overview.png" width=800 >
 
 #### MAP
 
@@ -69,10 +71,27 @@ In my map, there is a total of 31 points showing on the map. The points represen
 Pop-up windows will show up when viewers click on the points. The points represent the location of stadiums. Images and text display the historical background that happened during the Olympic Games. For example, women were allowed to take part for the first time in 1900. Berlin Olympics were the first to be televised to a limited audience under Hitler's regime in 1936. There were many historical moments happening in the Olympic Games.
 I found the name of the stadiums from the official website of the Olympic Games. I input lists of year, city, and stadiums' names in Google Sheet. There is an add-on tool to help me geocode the Latitude and Longitude of the stadiums so that I can use it in further steps.
 
+<img src="images/pop-up.png" width=800 >
+
 ##### Tokyo 2020 Olympic Games Postponed
 
-To relate to the recent news, it will be interesting to mention the postponement of the 2020 Tokyo Olympic Games. Maybe some of the people already knew some information from the internet or TV news. I will talk deeply within this topic from different perspectives that I collected from various media. 
+To relate to the recent news, it will be interesting to mention the postponement of the 2020 Tokyo Olympic Games. Maybe some of the people already knew some information from the internet or TV news. I will talk deeply within this topic from different perspectives that I collected from various media.
 
+- Estimated Losses from 1-year postponement: $6 billion
+- Estimated Losses if cancel: $37 billion
+- Impact on a host of other major tournaments and sports
+- Everything is uncertain
+- Athletes Lives - health risks & disruption to their training
+- Media: Sponsors & Advertisements
+- etc.
+
+<img src="images/coro tokyo.jpeg" width=300 >
+<img src="images/estimated.png" width=450 >
 
 ## Data Sources
-Most of my data and sources are from https://www.olympic.org/olympic-games, the official website of the Olympic Games.
+- Most of my data and sources are from https://www.olympic.org/olympic-games, the official website of the Olympic Games.
+- https://www.britannica.com/sports/Olympic-Games
+- https://www.britannica.com/sports/Olympic-Games/History-of-the-modern-Summer-Games
+- BBC news
+- The Asahi Shimbun http://www.asahi.com
+
