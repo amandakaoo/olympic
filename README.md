@@ -89,10 +89,10 @@ To relate to the recent news, it will be interesting to mention the postponement
 <img src="images/coro tokyo.jpeg" width=300 >
 <img src="images/estimated.png" width=450 >
 
-## Data Sources
+## Data Sources & References
 - Most of my data and sources are from [the official website of the Olympic Games](https://www.olympic.org/olympic-games)
 - [Olympic History](https://www.britannica.com/sports/Olympic-Games)
-- YouTube [Video 1](https://www.youtube.com/watch?v=ENMhrEVa4XQ) [Video 2](https://www.youtube.com/watch?v=VdHHus8IgYA)
+- YouTube [Video 1](https://www.youtube.com/watch?v=ENMhrEVa4XQ), [Video 2](https://www.youtube.com/watch?v=VdHHus8IgYA) (edit by iMovie)
 - BBC news 
 - [The Asahi Shimbun](http://www.asahi.com)
 
