@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Summer Olympic Games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta data for sharing links on Facebook-->
+       <!-- <meta property="og:title" content="The major cities in Oregon"/>
+       <meta property="og:url" content="http://geoviz.ceoas.oregonstate.edu/storymap/examples/2.5/video.html"/>
+       <meta property="og:description" content="This is an example of a storymap."/>
+       <meta property="og:image" content="../../img/social.png"/> -->
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/storymap.2.5.css">
+    <!--add required libraries-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--mini globle map-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="js/globeminimap.js"></script>
+
+    <!--story map plugin-->
+    <script src="js/storymap.2.5.js"></script>
+</head>
+<body>
+
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+            <section data-scene="overview" data-background="assets/olympicfix.mp4">
+                <div class="fullscreen text-center">
+
+                    <h1 class="display-4 d-flex justify-content-center">Summer Olympic Games</h1>
+
+
+                    <h5 class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">
+                        From Athens 1896 to Tokyo 2020, this story map illustrates the history of the Summer Olympic Games.
+                    </small>
+                </div>
+            </section>
+
+            <section data-scene="view">
+                <h2>Overview</h2>
+                <h5>In the map, the spots represent the location of the stadiums that have hosted or will host the Summer Olympic Games from 1896 to 2028.</h5>
+                <ul>
+                  <li>1896 Athens, Greece </li>
+                  <li>1900 Paris, France</li>
+                  <li>1904 St. Louis, United States</li>
+                  <li>1908 London, England</li>
+                  <li>1912 Stockholm, Sweden</li>
+                  <li>1920 Antwerp, Belgium</li>
+                  <li>1924 Paris, France</li>
+                  <li>1928 Amsterdam, Netherlands</li>
+                  <li>1932 Los Angeles, United States</li>
+                  <li>1936 Berlin, Germany</li>
+                  <li>1948 London, England</li>
+                  <li>1952 Helsinki, Finland</li>
+                  <li>1956 Melbourne, Australia</li>
+                  <li>1960 Rome, Italy</li>
+                  <li>1964 Tokyo, Japan</li>
+                  <li>1968 Mexico City, Mexico</li>
+                  <li>1972 Munich, West Germany</li>
+                  <li>1976 Montreal, Canada</li>
+                  <li>1980 Moscow, Soviet Union</li>
+                  <li>1984 Los Angeles, United States</li>
+                  <li>1988 Seoul, South Korea</li>
+                  <li>1992 Barcelona, Spain</li>
+                  <li>1996 Atlanta, United States</li>
+                  <li>2000 Sydney, Australia</li>
+                  <li>2004 Athens, Greece</li>
+                  <li>2008 Beijing, China</li>
+                  <li>2012 London, England</li>
+                  <li>2016 Rio de Janeiro, Brazil</li>
+                  <li>2020 Tokyo, Japan</li>
+                  <li>2024 Paris, France</li>
+                  <li>2028 Los Angeles, United States</li>
+
+            </section>
+
+
+            <section data-scene="Athens1">
+                <h2>1896 Athens</h2>
+                <h4>Stadium: Panathenaic Stadium</h4>
+                <h6>Countries: 14 </h6>
+                <h6>Athletes: 241 </h6>
+                <h6>Events: 43 </h6>
+                <p>The <b>first modern Olympics </b> were held in Athens, Greece. In the opening ceremony, King Georgios I and a crowd of 60,000
+                  spectators welcomed 241 participants from 14 nations (all male), who would compete in 43 events, including track and field, gymnastics,
+                  swimming, wrestling, cycling, tennis, weightlifting, shooting and fencing. A crowd estimated at more than 60,000 attended the opening day
+                   of competition. Members of the royal family of Greece played an important role in the organization and management of the Games. </p>
+                <p></p>
+                <img src="images/1896-1.jpg" width=300>
+                <img src="images/1896-2.jpg" width=300>
+            </section>
+
+            <section data-scene="Paris1">
+                <h2>1990 Paris</h2>
+                <h4>Stadium: Vincennes Velodrome</h4>
+                <h6>Countries: 24 </h6>
+                <h6>Athletes: 997 (22 women, 975 men)</h6>
+                <h6>Events: 95 </h6>
+                <p> <b> Women </b> were allowed to take part for the first time. The Games of 1900 were held in Paris as part of the World’s Fair.
+                  The Games suffered from poor organization and marketing. The organisers <em>spread the competitions over five months</em> and under-promoted
+                  their Olympic status to such an extent that many athletes never knew they had actually participated in the Olympic Games. Nevertheless,
+                  French athletes earned more than 100 medals, by far the most for any nation at the 1900 Games.</p>
+                <p></p>
+                <img src="images/1900-2.jpg" width=300>
+                <img src="images/1900-1.jpg" width=300>
+            </section>
+
+            <section data-scene="StLouis">
+                <h2>1904 St. Louis</h2>
+                <h4>Stadium: Francis Field</h4>
+                <h6>Countries: 12 </h6>
+                <h6>Athletes: 651 </h6>
+                <h6>Events: 95 </h6>
+                <p>The events were held in Missouri, United States. Unfortunately, the St Louis Games repeated all of the mistakes of 1900.
+                The various competitions were spread out over <em>four-and-a-half months</em> and became lost in the chaos of a World’s Fair celebrating
+                 the purchase of the Louisiana territory from France. As a result, the Games suffered. The 1904 Olympic Games were <b>the first at which gold,
+                 silver and bronze medals were awarded for first, second and third place.</b> However,the overall results were predictably lopsided,
+                 with Americans earning more than three-fourths of the 95 gold medals and more than 230 medals in all. </p>
+                 <p></p>
+                 <img src="images/1904-2.jpg" width=300>
+                 <img src="images/1904-3.jpg" width=300>
+            </section>
+
+            <section data-scene="London">
+                <h2>1908 London</h2>
+                <h4>Stadium: White City Stadium</h4>
+                <h6>Countries: 22 </h6>
+                <h6>Athletes: 2008 (37 women, 1,971 men)</h6>
+                <h6>Events: 110 </h6>
+                <p>The 1908 Olympic Games were originally awarded to Rome, but were reassigned to London when it became apparent that Rome would not be ready.
+                  Despite the short notice, the Games were exceptionally well organised. For the first time, <b>a stadium was specially prepared for the Games.</b>
+                  Also, the first to be organized by the various sporting bodies concerned and the <b>first to have an opening ceremony.</b></p>
+                  <p></p>
+                  <img src="images/1908-1.jpg" width=300>
+                  <img src="images/1908-2.jpg" width=300>
+            </section>
+            <section data-scene="Stockholm ">
+                <h2>1912 Stockholm </h2>
+                <h4>Stadium: Stockholm Olympic Stadium (Stockholms Olympiastadion)</h4>
+                <h6>Countries: 28 </h6>
+                <h6>Athletes: 2407 (48 women, 2,359 men)</h6>
+                <h6>Events: 102 </h6>
+                <p>The Stockholm Games were a model of efficiency. The Swedish hosts introduced the first Olympic use of automatic timing devices for the track events,
+                  the photo finish and a public address system. <b>For the first time, competitors in the Games came from all five continents.</b> It was also the first time
+                  Japan participated. The modern pentathlon, women’s swimming and women’s diving all made their Olympic debuts.</p>
+                    <p></p>
+                    <img src="images/1912-1.jpg" width=300>
+                    <img src="images/1912-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Antwerp">
+                <h2>1920 Antwerp</h2>
+                <h4>Stadium: Olympic Stadium (Olympisch Stadion)</h4>
+                <h6>Countries: 29 </h6>
+                <h6>Athletes: 2622 (65 women, 2,561 men)</h6>
+                <h6>Events: 156 </h6>
+                <p><b>The 1916 Olympic Games were scheduled to be held in Berlin but were cancelled due to World War I.</b> The 1920 Games were awarded to Antwerp to honour the
+                  suffering that had been inflicted on the Belgian people during the war. During the Opening Ceremony, the Olympic flag with the five rings signifying the universality
+                  of the Olympic Games was raised for the first time at an Olympic Games. The Olympic oath was taken for the first time by an athlete on behalf of all competitors, and
+                  for the first time doves were released as a symbol of peace.</p>
+                    <p></p>
+                    <img src="images/1920-1.jpg" width=300>
+                    <img src="images/1920-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Paris2">
+                <h2>1924 Paris</h2>
+                <h4>Stadium: Stade Olympique Yves-du-Manoir</h4>
+                <h6>Countries: 44 </h6>
+                <h6>Athletes:  3,089 (135 women, 2,954 men)</h6>
+                <h6>Events: 126 </h6>
+                <p>The 1924 Games represented a coming of age for the Olympics. International federations had gained more influence over their respective sports, standardizing the rules of competition,
+                  and national Olympic organizations in most countries conducted trials to ensure that the best athletes were sent to compete. After the 1924 Games, tennis was dropped from Olympic
+                  competition because of questions over the amateur standing of many participants. The sport did not return to the Olympics until 1988. </p>
+                <p>At the Closing Ceremony, the practice of <b>raising
+                  three flags (one for the International Olympic Committee, one for the host country and one for the future host country of the Games)</b> was instigated.</p>
+                    <p></p>
+                    <img src="images/1924-1.jpg" width=300>
+                    <img src="images/1924-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Amsterdam">
+                <h2>1928 Amsterdam</h2>
+                <h4>Stadium: Olympic Stadium (Olympisch Stadion)</h4>
+                <h6>Countries: 46 </h6>
+                <h6>Athletes: 2,883 (277 women, 2,606 men)</h6>
+                <h6>Events: 109 </h6>
+                <p>For the first time, a symbolic fire was lit during the Games. The fire was lit in a cauldron that was placed at the top of a tower in the stadium
+                  Germany participated in the Games once again, after 16 years of absence, since the 1912 Games.
+                  <b>The number of female competitors more than doubled</b> as women were finally allowed to compete in gymnastics and athletics, and <b>Asian athletes won gold
+                  medals for the first time.</b></p>
+                    <p></p>
+                    <img src="images/1928-3.jpg" width=300>
+                    <img src="images/1928-2.jpg" width=300>
+            </section>
+
+            <section data-scene="LosAngeles">
+                <h2>1932, 1984 & 2028 Los Angeles</h2>
+                <h4>Stadium: Los Angeles Memorial Coliseum</h4>
+                <h6>Countries: 37 / 140 </h6>
+                <h6>Athletes: </h6>
+                <h6><b>1932</b> 1,332 (126 women, 1,206 men)</h6>
+                <h6><b>1984</b> 6,829 (1,566 women, 5,263 men)</h6>
+                <h6>Events: 117 / 221</h6>
+                <p>In 1932 LA Olympic Games, the poor participation, comparing with 1928, was the result of the worldwide economic depression and the expense of traveling to California.
+                It were held in the middle of the <b>Great Depression</b>, participation in the Games was the lowest since 1904.The LA Games featured the first <b>Olympic Village</b>, and medal
+                winners standing on a podium with the flag of the winner being raised.</p>
+                <p>Los Angeles was the only city to bid for the right for hosting the 1984 Olympic Games. The 1984 Olympics <b>witnessed the movement of commercialism as an essential element in the
+                  staging of the Games.</b>Corporate sponsors were allowed to put Olympic symbols on their products, which were then marketed as the “official” such product of the Olympics.
+                  The financial success and high worldwide television ratings raised optimism about the Olympic movement for the first time in a generation.</p>
+                    <p></p>
+                    <img src="images/1932-1.jpg" width=300>
+                    <img src="images/1984-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Berlin">
+                <h2>1936 Berlin</h2>
+                <h4>Stadium: Olympic Stadium (Olympiastadion)</h4>
+                <h6>Countries: 49 </h6>
+                <h6>Athletes: 3,963 (331 women, 3,632 men)</h6>
+                <h6>Events: 129 </h6>
+                <p> The 1936 Olympics were held in a tense, politically charged atmosphere. It was the <b>first to be televised to a limited audience</b> and took place under Hitler's Nazi regime.
+                  The Berlin Games are best remembered for Adolf Hitler’s failed attempt to use them to prove his theories of Aryan racial superiority. As it turned out, the most popular hero of
+                  the Games was the African-American sprinter and long jumper Jesse Owens, who won four gold medals.</p>
+                  <p></p>
+                  <img src="images/Jesse Owens.jpeg" width=300>
+                  <img src="images/1936-1.jpg" width=300>
+            </section>
+
+            <section data-scene="London2">
+                <h2>1948 London</h2>
+                <h4>Stadium: Wembley Stadium</h4>
+                <h6>Countries: 59 </h6>
+                <h6>Athletes: 4,104 (390 women, 3,714 men)</h6>
+                <h6>Events: 136 </h6>
+                <p><b>The Olympic Games had not been held in either 1940 or 1944 due to World War II.</b> the city rose magnificently to the challenge - a true victory over dark times.
+                It was the first to be shown on home television. The women’s competition was expanded to 10 events, and the Empire Pool was the first covered Olympic pool to be used at the Games.</p>
+                    <p></p>
+                    <img src="images/1948-1.jpg" width=300>
+                    <img src="images/1948-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Helsinki">
+                <h2>1952 Helsinki</h2>
+                <h4>Stadium: Olympic Stadium (Olympiastadion)</h4>
+                <h6>Countries: 69 </h6>
+                <h6>Athletes: 4,955 (519 women, 4,436 men)</h6>
+                <h6>Events: 149 </h6>
+                <p>OThe 1952 Games were the first Olympics in which the Soviet Union participated, and the international tension caused by the <b>Cold War</b> initially prevailed.
+                  A change in the rules for equestrian competitions meant that, for the first time, women could not only enter, but could compete alongside men in the same "mixed" events.</p>
+                    <p></p>
+                    <img src="images/1952-3.jpg" width=300>
+                    <img src="images/1952-1.jpg" width=300>
+            </section>
+
+            <section data-scene="Melbourne">
+                <h2>1956 Melbourne </h2>
+                <h4>Stadium: Melbourne Cricket Ground (MCG)</h4>
+                <h6>Countries: 72 </h6>
+                <h6>Athletes: 3,314 (376 women, 2,938 men)</h6>
+                <h6>Events: 145 </h6>
+                <p>This was the first time that the Games had been held in Oceania. The Games were celebrated in November and December.
+                  The 1956 Games were also marked by an <b>innovation in the Closing Ceremony</b>. It was decided to let all the athletes
+                  parade together, rather than by country, as a symbol of world unity.</p>
+                <p><b>The first Games BOYCOTT:</b>The Soviet invasion of Hungary provoked protests from numerous western countries, and some of them withdrew from the Games. </p>
+                    <p></p>
+                    <img src="images/1956-1.jpg" width=300>
+                    <img src="images/1956-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Rome">
+                <h2>1960 Rome</h2>
+                <h4>Stadium: Olympic Stadium (Stadio Olimpico)</h4>
+                <h6>Countries: 83 </h6>
+                <h6>Athletes: 5,338 (611 women, 4,727 men)</h6>
+                <h6>Events: 150 </h6>
+                <p>The 1960 Olympics were the first to be <b>fully covered by television.</b>
+                The Games in Rome were the <b>last Games in which South Africa was allowed to participate for a period of some 32 years - until 1992</b> -
+                as the International Olympic Committee could not tolerate the racist policies of the South African government.</p>
+                    <p></p>
+                    <img src="images/1960-1.jpg" width=300>
+                    <img src="images/1960-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Tokyo">
+                <h2>1964 Tokyo </h2>
+                <h4>Stadium: National Stadium</h4>
+                <h6>Countries: 93 </h6>
+                <h6>Athletes: 5,151 (678 women, 4,473 men)</h6>
+                <h6>Events: 163 </h6>
+                <p>The 1964 Tokyo Games were the <b>first to be held in Asia</b>. It introduced improved timing and scoring technologies, including the
+                  first use of computers to keep statistics. The carrier of the flame, Yoshinori Sakai, was chosen because he was born on 6 August 1945,
+                  the day the atomic bomb exploded in Hiroshima, in homage to the victims and as a call for peace in the world.
+                  <p></p>
+                  <img src="images/1964-2.jpg" width=300>
+                  <img src="images/1964-3.jpg" width=300>
+            </section>
+
+            <section data-scene="MexicoCity">
+                <h2>1968 Mexico City</h2>
+                <h4>Stadium: Olympic Stadium (Estadio Olímpico Universitario)</h4>
+                <h6>Countries: 112 </h6>
+                <h6>Athletes: 5,516 (781 women, 4,435 men)</h6>
+                <h6>Events: 171 </h6>
+                <p>The 1968 Olympic Games in Mexico City <b>were the most politically charged Olympics since the 1936 Games in Berlin.</b> Ten days
+                  before the Games were to open, students protesting the Mexican government’s use of funds for the Olympics rather than for social programs.</p>
+                <p> At the height of the US Civil Rights Movement during the 1968 Olympic Games, African-Americans runners African-American runners Tommie Smith
+                  and John Carlos staged a protest at the medal ceremony. They were stripped of their medals but inspired a whole generation of black athletes. </p>
+                    <p></p>
+                    <img src="images/1968-3.jpg" width=300>
+                    <img src="images/1968-1.jpg" width=300>
+              </section>
+
+            <section data-scene="Munich">
+                <h2>1972 Munich  </h2>
+                <h4>Stadium: Olympic Stadium (Olympiastadion)</h4>
+                <h6>Countries: 121 </h6>
+                <h6>Athletes: 7,134 (1,059 women, 6,075 men)</h6>
+                <h6>Events: 195 </h6>
+                <p>The 11 days of these Games were perhaps the greatest Olympic festival ever. However, the Games were interrupted when eight Arab terrorists entered
+                  the Olympic Village, took hostage and then killed 11 members of the Israeli Olympic team. The Olympic Games were suspended for 34 hours and a mass
+                  was held in the main stadium to commemorate the victims. But the Games continued at the insistence of the IOC President Avery Brundage, who famously
+                  said "The Games must go on !"</p>
+                    <p></p>
+                    <img src="images/1972-1.jpg" width=300>
+                    <img src="images/1972-2.jpg" width=300>
+            </section>
+
+            <section data-scene="Montreal">
+                <h2>1976 Montreal </h2>
+                <h4>Stadium: Olympic Stadium (Stade Olympique)</h4>
+                <h6>Countries: 92 </h6>
+                <h6>Athletes: 6,084 (1,260 women, 4.824 men)</h6>
+                <h6>Events: 198 </h6>
+                <p>The 1976 Games drew more attention to the apparent problems of the Olympic movement. Taiwan also boycotted, when Canada, which officially recognized the
+                  People’s Republic of China, would not permit Taiwan to be identified at the Games as the Republic of China. There was also concern that the amateur spirit
+                  of the Games had been undermined by the growing commercial influence on sports in the West and the pervasive government control of athletes in the Eastern
+                  bloc countries. <b>The Montreal Games were a financial disaster, placing a burden of debt on the people of Canada and Quebec that lasted for decades.</b></p>
+                    <p></p>
+                    <img src="images/1976-1.jpg" width=300>
+                    <img src="images/1976-2.jpg" width=300>
+            </section>
+
+            <section data-scene="Moscow">
+                <h2>1980 Moscow</h2>
+                <h4>Stadium: Grand Sports Arena of the Luzhniki Olympic Complex</h4>
+                <h6>Countries: 80 </h6>
+                <h6>Athletes: 5,179 (1,115 women, 4,064 men)</h6>
+                <h6>Events: 203 </h6>
+                <p>The Soviet invasion of Afghanistan in December 1979 led to <b>the largest boycott in the history of the Olympic movement.<b> A US-led boycott reduced the number of
+                  participating nations to 80, the lowest number since 1956. The Games were also hurt by rowdy behavior from spectators, cheating by officials, and security so
+                  intrusive that winners in track events were physically prevented from taking victory laps.</p>
+                  <p></p>
+                  <img src="images/1980-2.jpg" width=300>
+                  <img src="images/1980-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Seoul">
+                <h2>1988 Seoul  </h2>
+                <h4>Stadium: Olympic Stadium</h4>
+                <h6>Countries: 159 </h6>
+                <h6>Athletes: 8,391</h6>
+                <h6>Events: 237 </h6>
+                <p>Political problems threatened to return to centre stage at the 1988 Games. North Korea, still technically at war with South Korea, complained that it should have
+                  cohost status. The IOC made some concessions to North Korea, but North Korea did not find them satisfactory and boycotted; several other countries stayed away from
+                  Seoul in solidarity with North Korea. .<p>
+                  <p></p>
+                  <img src="images/1988-1.jpg" width=300>
+                  <img src="images/1988-3.jpg" width=300>
+
+            </section>
+
+            <section data-scene="Barcelona">
+                <h2>1992 Barcelona  </h2>
+                <h4>Stadium: Olympic Stadium (Estadio Olímpico Lluís Companys)</h4>
+                <h6>Countries: 46 </h6>
+                <h6>Athletes: 2,883 (277 women, 2,606 men)</h6>
+                <h6>Events: 109 </h6>
+                <p>The 1992 Games were perhaps the most-successful modern Olympics. The dramatic political changes that had swept across eastern Europe had a tremendous effect
+                  on the Olympics. <b>For the first time in three decades, there was no boycott.</b> Due to important global political changes, Apartheid had been abolished in South Africa.
+                  Then there was the fall of the Berlin Wall and the reunification of West and East Germany. Communism had ended and the Soviet Union was divided into 15 separate countries
+                  which participated as a "unified team”. </p>
+                  <p></p>
+                  <img src="images/1992-2.jpg" width=300>
+                  <img src="images/1992-1.jpg" width=300>
+            </section>
+
+            <section data-scene="Atlanta">
+                <h2>1996 Atlanta </h2>
+                <h4>Stadium: Centennial Olympic Stadium</h4>
+                <h6>Countries: 197 </h6>
+                <h6>Athletes: 10,318 (3,512 women, 6,806 men)</h6>
+                <h6>Events: 271 </h6>
+                <p>For the first time in Olympic history, all 197 recognised National Olympic Committees were represented at the Games. Selected over Athens, Greece, to host the Centennial
+                  Summer Games, Atlanta staged one of the most extravagant Games in Olympic history. It cost nearly $1.7 billion. For the first time, the Games received no governmental financial
+                  support. Instead, corporate sponsors and television rights were relied upon to defray costs.
+                </p>
+                    <p></p>
+                    <img src="images/1996-1.jpg" width=300>
+                    <img src="images/1996-3.jpg" width=300>
+            </section>
+
+            <section data-scene="Sydney">
+                <h2>2000 Sydney </h2>
+                <h4>Stadium: Stadium Australia</h4>
+                <h6>Countries: 199 (+ four individual athletes (IOA)) </h6>
+                <h6>Athletes: 10,651 (4,069 women, 6,582 men)</h6>
+                <h6>Events: 300 </h6>
+                <p>Sydney was chosen as host city of the 2000 Olympics. The IOC was attracted to the city’s long history of enthusiasm for sports. The opening ceremonies celebrated the history
+                  of Australia, especially the unique culture and contributions of the Aboriginal peoples of the continent. </p>
+                    <p></p>
+                    <img src="images/2000-2.jpg" width=300>
+                    <img src="images/2000-1.jpg" width=300>
+            </section>
+
+            <section data-scene="Athens2">
+                <h2>2004 Athens </h2>
+                <h4>Stadium: Olympic Stadium</h4>
+                <h6>Countries: 201 </h6>
+                <h6>Athletes: 10,625 athletes (4,329 women, 6,296 men)</h6>
+                <h6>Events: 301 </h6>
+                <p>The 2004 Olympic Games returned home to Greece, the birthplace of the ancient Games, and site of the inaugural modern Olympics. A record 201 National Olympic Committees participated
+                  in the Olympic Games. The overall tally for events on the programme was 301. Popularity in the Games also soared, as 3.9 billion people had access to the television coverage. </p>
+                    <p></p>
+                    <img src="images/2004-2.jpg" width=300>
+                    <img src="images/2004-4.jpg" width=300>
+            </section>
+
+            <section data-scene="Beijing">
+                <h2>2008 Beijing </h2>
+                <h4>Stadium: Beijing National Stadium</h4>
+                <h6>Countries: 204 </h6>
+                <h6>Athletes: 10,942 (4,637 women, 6,305 men)</h6>
+                <h6>Events: 302 </h6>
+                <p>In 2008 the Olympic Games were held in China for the first time. The Beijing organizing committee earned high marks for the facilities that were constructed for the event,
+                  particularly the award-winning National Stadium. The athletes’ achievements were astonishing, the organization was excellent; the venues breathtaking and the anti-doping tests
+                  were stricter. Several hundred million watched worldwide on TV as more than 40 world records and over 130 Olympic records were broken.</p>
+                    <p></p>
+                    <img src="images/2008-5.jpg" width=300>
+                    <p></p>
+                    <img src="images/2008-4.jpg" width=300>
+            </section>
+
+            <section data-scene="London3">
+                <h2>2012 London </h2>
+                <h4>Stadium: Olympic Stadium</h4>
+                <h6>Countries: 204 </h6>
+                <h6>Athletes: 10,568</h6>
+                <h6>Events: 302 </h6>
+                <p>In 2012 London became the first city to host the modern Games three times, having previously been the site of the 1908 and 1948 Olympic Games. </p>
+                <p>The London Games were dominated by two of the greatest Olympians of all time: Jamaican sprinter Usain Bolt and American swimmer Michael Phelps. Phelps became the most decorated
+                  athlete in Olympic history by capturing six medals to bring his lifetime total to 22. </p>
+                    <p></p>
+                    <img src="images/2012-1.jpg" width=300>
+                    <p></p>
+                    <img src="images/2012-4.jpg" width=300>
+            </section>
+
+            <section data-scene="Rio">
+                <h2>2016 Rio de Janeiro </h2>
+                <h4>Stadium: Maracanã Stadium (Estádio do Maracanã)</h4>
+                <h6>Countries: 207 </h6>
+                <h6>Athletes: 11,238</h6>
+                <h6>Events: 306 </h6>
+                <p>The buildup to the Rio Games was beset by more problems than any other recent Olympiad. The Rio Olympics were plagued by massive cost overruns and construction that ran far behind
+                  schedule. However,it eventually celebrated and showcased sport, thanks to the city’s stunning setting and a desire to lift event presentation to new heights. At the same time, Rio 2016
+                  was an opportunity to deliver the broader aspirations for the long-term future of the city, region, and country – an opportunity to hasten the transformation of Rio de Janeiro into an
+                  even greater global city.</p>
+                    <p></p>
+                    <img src="images/2016-4.jpg" width=300>
+                    <p></p>
+                    <img src="images/2016-2.jpg" width=300>
+            </section>
+
+            <section data-scene="Tokyo">
+                <h2>2020 Tokyo (Postponed)</h2>
+                <h4>Stadium: New National Stadium</h4>
+                <p>Due to the Covid-19 outbreak, the Olympic Games Tokyo 2020 were postponed for the first time in their history. The Opening Ceremony of the Olympic Games Tokyo 2020
+                  will now be held on 23 July 2021. Tokyo and the whole World are expecting the Olympic can be successfully held before next summer.</p>
+                <h5><strong>Effect</strong></h5>
+                <ul>
+                  <li> Estimated Losses from 1-year postponement: $6 billion</li>
+                  <li> Estimated Losses if cancel: $37 billion </li>
+                  <li> Impact on a host of other major tournaments and sports</li>
+                  <li> Everything is <em>uncertain</em></li>
+                  <li> Athletes Lives - health risks & disruption to their training</li>
+                  <li> Media: Sponsors & Advertisements </li>
+                  <li> etc.</li>
+                </ul>
+
+                    <p></p>
+                    <img src="images/2020-2.png" width=300>
+                    <p></p>
+                    <img src="images/2020-1.jpg" width=300>
+            </section>
+
+            <section data-scene="France">
+                <h2>2024 Paris </h2>
+                <h4>Stadium: Stade de France</h4>
+                    <p></p>
+                    <img src="images/2024-1.png" width=300>
+                    <p></p>
+                    <img src="images/Flag-France.jpg" width=250>
+            </section>
+
+            <section data-scene="end" data-background="images/tokyo.jpeg">
+                <div class="fullscreen text-center">
+                    <h1 class="display-3 d-flex justify-content-center">Thanks for watching!!!</h1>
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">
+                      <a href="https://www.olympic.org/">Official website of the Olympic Games</a>.</small>
+                </div>
+            </section>
+
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+
+    <dl>
+        <dt>
+            <!--github icon-->
+            <a class="fab fa-github btn" href="https://github.com/amandakaoo/olympic" style="top:40px"
+               target="_blank"></a>
+        </dt>
+        <dt>
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a web map that introduce the stadiums and the cities that have hosted the Summer Olympic Games
+                      in history from 1896. This July and August, one of the leading international sporting events should be host
+                      in Tokyo. Unfortunately, due to coronavirus, the event was postponed until next year. This project also analyzes the
+                      impact of the postponement of the Olympic Games Tokyo 2020, from athletes to economics. Right now, the loss is already inevitable.
+                      Tokyo and the whole World are expecting the Olympic can be successfully held before next summer. Not every athlete
+                      has the next 4 years to wait.</p>
+
+                    <p> It is mainly made as a project for a course GEOG 458:
+                        Advanced Digital Geographies at the University of Washington, Seattle.
+                        The story map library is derived from the
+                        storymap plugin for leaflet at <a>http://atlefren.github.io/storymap/</a>, and its functionality
+                        relies on both leaflet and Boostrap.</p>
+                    <p><b>storymap.js</b> | Released Date: 02/20/2017 | Version: 2.5 | MIT License </p>
+                    <p><b>Author: Amanda Kao</b> | University of Washington|
+                    <p><b>Storymap Template: Bo Zhao</b> |University of Washington|
+                    </p>
+                    <p>Most of my data and sources are from <a>https://www.olympic.org.</a> the official website of the Olympic Games.</p>
+                    <p>The background video on the front page were pictures from Official website of the Olympic Games, composing by iMovie.</p>
+                    <p>This story map uses geospatial data from Mapbox and Google Maps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+    var layers = {
+      satellite: {
+          layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+              id: 'mapbox.satellite'
+          })
+      },
+
+    cartodb_light: {
+          layer: L.tileLayer('http://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
+        )},
+
+
+    athens_mark:{layer: L.marker([37.9683342, 23.7411118]).bindPopup('<center><b>1896 - Panathenaic Stadium</b><br><img src= "images/Panathenaic Stadium.jpeg" width="300"><br>')},
+    paris1_mark:{layer: L.marker([48.8224617101, 2.406915039]).bindPopup('<center><b>1900 - Vincennes Velodrome</b><br><img src= "images/Vincennes Velodrome.jpg" width="300"><br>')},
+    stlouis_mark:{layer: L.marker([38.6478953, -90.3137516]).bindPopup('<center><b>1904 - Francis Field</b><br><img src= "images/Francis Field.jpg" width="300"><br>')},
+    london_mark:{layer: L.marker([51.51362, -0.2274]).bindPopup('<center><b>1908 - White City Stadium</b><br><img src= "images/White City Stadium.jpg" width="300"><br>')},
+    stockholm_mark:{layer: L.marker([59.3453364, 18.0790178]).bindPopup('<center><b>1912 - Stockholm Olympic Stadium (Stockholms Olympiastadion)</b><br><img src= "images/Stockholm Olympic Stadium.jpg" width="300"><br>')},
+    antwerp_mark:{layer: L.marker([52.3434197, 4.8541297]).bindPopup('<center><b>1920 - Olympic Stadium (Olympisch Stadion)</b><br><img src= "images/Olympic Stadium.jpg" width="300"><br>')},
+    paris2_mark:{layer: L.marker([48.92432964, 2.242165698]).bindPopup('<center><b>1924 - Stade Olympique Yves-du-Manoir</b><br><img src= "images/Stade Olympique.jpg" width="300"><br>')},
+    amsterdam_mark:{layer: L.marker([52.3434197, 4.8541297]).bindPopup('<center><b>1928 - Olympic Stadium (Olympisch Stadion)</b><br><img src= "images/Olympic Stadium ams.jpg" width="300"><br>')},
+    la_mark:{layer: L.marker([34.0140526, -118.2878754]).bindPopup('<center><b>1932, 1984 & 2028 - Los Angeles Memorial Coliseum</b><br><img src= "images/1984-1.jpg" width="300"><br>')},
+    berlin_mark:{layer: L.marker([52.5146971,13.2394987]).bindPopup('<center><b>1936 - Olympic Stadium (Olympiastadion)</b><br><img src= "images/Olympiastadion.jpg" width="300"><br>')},
+    london2_mark:{layer: L.marker([51.5560208,-0.2795188]).bindPopup('<center><b>1948 - Wembley Stadium (known as the Empire Stadium)</b><br><img src= "images/Empire Stadium.jpg" width="300"><br>')},
+    helsink_mark:{layer: L.marker([52.5146971,13.2394987]).bindPopup('<center><b>1952 - Olympic Stadium (Olympiastadion)</b><br><img src= "images/helsinki-olympic-stadium.jpg" width="300"><br>')},
+    melbourne_mark:{layer: L.marker([-37.8199669,144.9834493]).bindPopup('<center><b>1956 - Melbourne Cricket Ground (MCG)</b><br><img src= "images/Melbourne Cricket Ground.jpg" width="300"><br>')},
+    rome_mark:{layer: L.marker([41.934077,12.454725]).bindPopup('<center><b>1960 - Olympic Stadium (Stadio Olimpico)</b><br><img src= "images/Stadio Olimpico.jpg" width="300"><br>')},
+    tokyo_mark:{layer: L.marker([41.934077,12.454725]).bindPopup('<center><b>1964 & 2020 - National Stadium</b><br><img src= "images/National Stadium old.jpg" width="300"><img src= "images/National Stadium new.jpg" width="300"><br>')},
+    mexico_mark:{layer: L.marker([19.3319125,-99.1921777]).bindPopup('<center><b>1968 - Olympic Stadium (Estadio Olímpico Universitario)</b><br><img src= "images/mexico.jpeg" width="300"><br>')},
+    munich_mark:{layer: L.marker([52.5146971,13.2394987]).bindPopup('<center><b>1972 - Olympic Stadium (Olympiastadion)</b><br><img src= "images/Olympiastadion 1972.jpg" width="300"><br>')},
+    montreal_mark:{layer: L.marker([45.5579957,-73.5518816]).bindPopup('<center><b>1976 - Olympic Stadium (Stade Olympique)</b><br><img src= "images/Stade Olympique 1976.jpg" width="300"><br>')},
+    moscow_mark:{layer: L.marker([55.715762,37.5537157]).bindPopup('<center><b>1980 - Grand Sports Arena of the Luzhniki Olympic Complex</b><br><img src= "images/Luzhniki Olympic.jpg" width="300"><br>')},
+    seoul_mark:{layer: L.marker([45.5579957,-73.5518816]).bindPopup('<center><b>1988 - Olympic Stadium</b><br><img src= "images/Olympic Stadium seoul.jpeg" width="300"><br>')},
+    barcelona_mark:{layer: L.marker([41.36474817,2.1556704]).bindPopup('<center><b>1992 - Olympic Stadium (Estadio Olímpico Lluís Companys)</b><br><img src= "images/Pbarcelona.jpg" width="300"><br>')},
+    atlanta_mark:{layer: L.marker([33.7618207,-84.3945295]).bindPopup('<center><b>1996 - Centennial Olympic Stadium</b><br><img src= "images/Centennial Olympic Stadium.jpg" width="300"><br>')},
+    sydney_mark:{layer: L.marker([-33.8471156,151.0634135]).bindPopup('<center><b>2000 - Stadium Australia</b><br><img src= "images/Stadium Australia.jpg" width="300"><br>')},
+    athens2_mark:{layer: L.marker([38.0361,23.7876]).bindPopup('<center><b>2004 - Olympic Stadium</b><br><img src= "images/athens 2004.jpg" width="300"><br>')},
+    beijing_mark:{layer: L.marker([39.9929431,116.3965112]).bindPopup('<center><b>2008 - Beijing National Stadium</b><br><img src= "images/Beijing National Stadium.png" width="300"><br>')},
+    london3_mark:{layer: L.marker([51.536497854,-0.009833294]).bindPopup('<center><b>2012 - Olympic Stadium</b><br><img src= "images/2012 london.jpg" width="300"><br>')},
+    rio_mark:{layer: L.marker([-22.9121089,-43.2301558]).bindPopup('<center><b>2016 - Maracanã Stadium (Estádio do Maracanã)</b><br><img src= "images/rio 2016.jpg" width="300"><br>')},
+    france_mark:{layer: L.marker([48.9244592,2.3601645]).bindPopup('<center><b>2024 - Stade de France</b><br><img src= "images/Stade de France.jpg" width="300"><br>')},
+
+    };
+
+    var scenes = {
+        overview: {lat: 44.0000000, lng: -123.5000000, zoom: 11, name: 'Cover Page', layers: []},
+        view: {lat: 48.483528, lng: -39.2291334, zoom: 3, name: 'view', layers: [layers.satellite,layers.athens_mark,layers.paris1_mark,
+          layers.stlouis_mark,layers.london_mark,layers.stockholm_mark,layers.antwerp_mark,layers.paris2_mark,layers.amsterdam_mark,layers.la_mark,layers.berlin_mark,
+          layers.london2_mark,layers.helsink_mark,layers.melbourne_mark,layers.rome_mark,layers.tokyo_mark,layers.mexico_mark,layers.munich_mark,layers.montreal_mark,layers.moscow_mark,
+          layers.seoul_mark,layers.barcelona_mark,layers.atlanta_mark,layers.sydney_mark,layers.athens2_mark,layers.beijing_mark,layers.london3_mark,layers.rio_mark,layers.france_mark]},
+        Athens1: {lat: 37.9683342, lng: 23.7411118, zoom: 14, name: 'Athens1', layers: [layers.athens_mark]},
+        Paris1: {lat: 48.8224617101, lng: 2.406915039, zoom: 14, name: 'Paris', layers: [layers.paris1_mark]},
+        StLouis: {lat: 38.6478953, lng: -90.3137516, zoom: 14, name: 'StLouis', layers: [layers.stlouis_mark]},
+        London: {lat: 51.51362, lng: -0.2274, zoom: 14, name: 'London', layers: [layers.london_mark]},
+        Stockholm: {lat: 59.3453364, lng: 18.0790178, zoom: 14, name: 'Stockholm', layers: [layers.stockholm_mark]},
+        Antwerp : {lat: 52.3434197, lng: 4.8541297, zoom: 14, name: 'Antwerp', layers: [layers.antwerp_mark]},
+        Paris2: {lat: 48.92432964, lng: 2.242165698, zoom: 13, name: 'Paris2', layers: [layers.paris2_mark]},
+        Amsterdam: {lat: 52.3434197, lng: 4.8541297, zoom: 13, name: 'Amsterdam', layers: [layers.amsterdam_mark]},
+        LosAngeles: {lat: 34.0140526, lng: -118.2878754, zoom: 13, name: 'LosAngeles', layers: [layers.la_mark]},
+        Berlin: {lat: 52.5146971, lng: 13.2394987, zoom: 13, name: 'Berlin ', layers: [layers.berlin_mark]},
+        London2: {lat: 51.5560208, lng: -0.2795188, zoom: 13, name: 'London2', layers: [layers.london2_mark]},
+        Helsinki: {lat: 52.5146971, lng: 13.2394987, zoom: 13, name: 'Helsinki', layers: [layers.helsink_mark]},
+        Melbourne : {lat: -37.8199669, lng: 144.9834493, zoom: 13, name: 'Melbourne', layers: [layers.melbourne_mark]},
+        Rome: {lat: 41.934077, lng: 12.454725, zoom: 13, name: 'Rome', layers: [layers.rome_mark]},
+        Tokyo: {lat: 35.6778952, lng: 139.7145468, zoom: 13, name: 'Tokyo', layers: [layers.tokyo_mark]},
+        MexicoCity: {lat: 19.3319125, lng: -99.1921777, zoom: 13, name: 'MexicoCity', layers: [layers.mexico_mark]},
+        Munich: {lat: 52.5146971, lng: 13.2394987, zoom: 13, name: 'Munich', layers: [layers.munich_mark]},
+        Montreal: {lat: 45.5579957, lng: -73.5518816, zoom: 13, name: 'Montreal', layers: [layers.montreal_mark]},
+        Moscow: {lat: 55.715762, lng: 37.5537157, zoom: 13, name: 'Moscow', layers: [layers.moscow_mark]},
+        Seoul: {lat: 45.5579957, lng: -73.5518816, zoom: 13, name: 'Seoul', layers: [layers.seoul_mark]},
+        Barcelona: {lat: 41.3647481, lng: 2.1556704, zoom: 13, name: 'Barcelona', layers: [layers.barcelona_mark]},
+        Atlanta: {lat: 33.7618207, lng: -84.3945295, zoom: 13, name: 'Atlanta', layers: [layers.atlanta_mark]},
+        Sydney: {lat: -33.8471156, lng: 151.0634135, zoom: 13, name: 'Sydney', layers: [layers.sydney_mark]},
+        Athens2: {lat: 38.0361, lng: 23.7876, zoom: 13, name: 'Athens2', layers: [layers.athens2_mark]},
+        Beijing: {lat: 39.9929431, lng: 116.3965112, zoom: 13, name: 'Beijing', layers: [layers.beijing_mark]},
+        London3: {lat: 51.536497854, lng: -0.009833294, zoom: 13, name: 'London3', layers: [layers.london3_mark]},
+        Rio: {lat: -22.9121089, lng: -43.2301558, zoom: 13, name: 'Rio', layers: [layers.rio_mark]},
+        France: {lat: 48.9244592, lng: 2.3601645, zoom: 13, name: 'France', layers: [layers.france_mark]},
+        end: {lat: 44.0000000, lng: -123.5000000, zoom: 14, name: 'The End'}
+    };
+
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.cartodb_light,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        credits: "",
+        loader: true,
+        scalebar: false,
+        flyo: true,
+        navwidget: true,
+
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map($(".storymap-map")[0], {
+                zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+                zoomAnimation: true
+            }).setView([44, -120], 7);
+
+            //add an miniglobe
+            new L.Control.GlobeMiniMap({
+                marker: 'red',
+                position: 'bottomright'
+            }).addTo(map);
+
+
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
