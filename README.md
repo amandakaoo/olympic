@@ -29,7 +29,7 @@ Despite telling the history of the Summer Olympic Games, I also want to analyze 
 <img src="images/overview.png" width=800 >
 
 ### MAP
-### URL: https://amandakaoo.github.io/olympic/
+#### URL: https://amandakaoo.github.io/olympic/
 
 Within over one century of history, the modern Olympic Games were born in Athens in 1896, featuring 280 participants from 30 nations. The history of the Olympics not only reflects its historical background but also some important movements from time to time, reaching and achieving the significance of the Olympic Spirit: the spirit of friendship, solidarity, and fair play.
 
